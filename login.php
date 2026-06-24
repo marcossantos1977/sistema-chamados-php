@@ -4,6 +4,16 @@ $titulo = "Login";
 
 $email = $_POST['email'] ?? '';
 $senha = $_POST['senha'] ?? '';
+
+$mensagem = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+      if ($email === '') {
+        $mensagem = 'Preencha o e-mail';
+    }
+    
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +27,8 @@ $senha = $_POST['senha'] ?? '';
 
     <h1><?php echo $titulo; ?></h1>
 
+    <p><?php echo $mensagem; ?></p>
+
     <form method="post">
 
         <p>
@@ -29,7 +41,7 @@ $senha = $_POST['senha'] ?? '';
             <input type="password" name="senha">    
         </p>
 
-        <button type="subimit">
+        <button type="submit">
             Entrar
         </button>
 
