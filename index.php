@@ -17,7 +17,15 @@ $titulo = "Sistema de Chamados";
 
     <h1><?php echo $titulo; ?></h1>
 
-    <p>Meu primeiro sistema de chamados em PHP</p>
+    <p>Meu primeiro Projeto em PHP</p>
+
+    <hr>
+
+    <a href="login.php">Ir para Login</a>
+
+    <br><br>
+
+    <a href="dashboard.php">Ir para Dashboard</a>
 </body>
 </html>
     
